@@ -3,8 +3,8 @@
 	function insertionSort($arr, $maxIndex, $iteration) {
 		if($iteration == $maxIndex-1) {
 	        //base case: we are at the last element
-	        echo "<h1>Iteration ".$iteration."</h1>";
-	        echo var_dump($arr);
+	        // echo "<h1>Iteration ".$iteration."</h1>";
+	        // echo var_dump($arr);
 	        return $arr;
 	    }
 	    else {
@@ -19,8 +19,8 @@
 	                $sorted[$i] = $element;
 	            }
 	        }
-	        echo "<h1>Iteration ".$iteration."</h1>";
-	        echo var_dump($sorted);
+	        // echo "<h1>Iteration ".$iteration."</h1>";
+	        // echo var_dump($sorted);
 	        return $sorted;
 	    }
 	}
@@ -37,6 +37,7 @@
 	$arr = populateArray($arr);
 	$sorted = insertionSort($arr, count($arr), 0);
 	echo var_dump($arr);
+	echo "<br>";
 	echo var_dump($sorted);
 
  ?>
